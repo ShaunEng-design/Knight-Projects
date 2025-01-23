@@ -8,6 +8,40 @@ html {
     height: 100%;
 }
 
+/* Responsive design for smaller screens */
+
+@media screen and (max-width: px) {
+
+    .navbarsize {
+        flex-direction: column;
+    }
+
+    .imagescontainer {
+        flex-direction: column;
+        flex: 100%;
+        width: 100%;
+    }
+
+    .gallery {
+        flex-direction: column;
+    }
+
+    .gallery a img {
+        width: 400px;
+    }
+
+    .gallery h1 {
+        width: 400px;
+    }
+
+    .mainarea1 {
+        flex-direction: column;
+        flex: 100%;
+    }
+}
+
+/* Responsive design for smaller screens */
+
 @font-face {
     font-family: knight;
     src: url(fonts/KnightsQuest.ttf)
