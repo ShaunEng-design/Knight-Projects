@@ -10,7 +10,7 @@ html {
 
 /* Responsive design for smaller screens */
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 320px) {
 
     .navbarsize {
         flex-direction: column;
