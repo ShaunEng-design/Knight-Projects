@@ -39,6 +39,13 @@ html {
         flex: 100%;
     }
 }
+@media screen and (max-width: 480px) {
+
+    .navbarsize {
+        display: none;
+        background-color: black;
+    }
+}
 
 /* Responsive design for smaller screens */
 
