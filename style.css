@@ -314,6 +314,7 @@ header {
     text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
+    text-decoration: underline;
 }
 
 .contactheading .underline {
@@ -332,6 +333,15 @@ header {
 .contactdeets2 {
     color: white;
     text-align: center;
+}
+
+.contactinfo .heading {
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: larger;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 
