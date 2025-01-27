@@ -79,7 +79,6 @@ body {
     .smallgridteam {
         display: grid !important;
         grid-template-columns: repeat(1, 1fr) !important;
-        grid-auto-rows: minmax(200px, auto);
     }
 
     .smallgridteam .teamtext p {
@@ -88,6 +87,8 @@ body {
 
     .smallgridteam .teamtext {
         margin: 10px;
+        text-align: center;
+        width: 96%;
     }
 
     .smallgridteam .gary {
@@ -459,8 +460,7 @@ header {
 
 .teamcontainer {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 100%;
+    grid-template-columns: 30% 70%;
     box-sizing: border-box;
     background-color: #040d91;
 }
@@ -470,6 +470,7 @@ header {
     background-repeat: no-repeat;
     background-size: contain;
     height: 700px;
+    width: 100%;
 }
 
 .teamtext {
