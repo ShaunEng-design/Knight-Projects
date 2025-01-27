@@ -288,8 +288,8 @@ header {
 }
 
 .contactinfo li {
-    text-align: center;
     color: white;
+    margin-left: 820px;
 }
 
 .pic {
@@ -307,6 +307,7 @@ header {
     color: white;
     text-align: center;
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .contactheading .underline {
