@@ -8,46 +8,11 @@ html {
     height: 100%;
 }
 
-/* Responsive design for smaller screens */
-
-@media screen and (max-width: 700px) {
-
-    .navbarsize {
-        flex-direction: column;
-    }
-
-    .imagescontainer {
-        flex-direction: column;
-        flex: 100%;
-        width: 100%;
-    }
-
-    .gallery {
-        flex-direction: column;
-    }
-
-    .gallery a img {
-        width: 400px;
-    }
-
-    .gallery h1 {
-        width: 400px;
-    }
-
-    .mainarea1 {
-        flex-direction: column;
-        flex: 100%;
-    }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-@media screen and (max-width: 480px) {
-
-    .navbarsize {
-        display: none;
-        background-color: black;
-    }
-}
-
-/* Responsive design for smaller screens */
 
 @font-face {
     font-family: knight;
@@ -55,51 +20,153 @@ html {
 }
 
 body {
-    background-color: #b4b4b4;
+    background-color: #7a7a7a;
 }
+
+/* Responsive design for smaller screens */
+
+@media screen and (max-width: 640px) {
+
+    .navbar .hidemenusmall {
+        display: none;
+        padding: 0;
+        width: 100%;
+    }
+
+    .smallgrid {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        grid-auto-rows: minmax(100px, auto);
+    }
+
+    .box2 {
+        display: none;
+    }
+
+    header h1 {
+        font-size: smaller;
+    }
+
+    .hidesmall {
+        display: none;
+    }
+
+    .contactsmallgrid {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        grid-auto-rows: minmax(100px, auto) !important;
+    }
+
+    .contactbox2 {
+        background-image: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .contactbox2 .hiddenonsmall {
+        text-align: center;
+        opacity: 1;
+        font-size: larger;
+        margin-bottom: 50px;
+        color: yellow;
+        font-weight: bold;
+    }
+
+    .contactheading {
+        margin-bottom: 20px;
+    }
+
+    .smallgridteam {
+        display: grid !important;
+        grid-template-columns: repeat(1, 1fr) !important;
+        grid-auto-rows: minmax(200px, auto);
+    }
+
+    .smallgridteam .teamtext p {
+        margin: 0;
+    }
+
+    .smallgridteam .teamtext {
+        margin: 10px;
+    }
+
+    .smallgridteam .gary {
+        background-image: url(gary.jpg);
+        background-size: 150px;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        height: 200px;
+        margin-top: 10px;
+    }
+}
+
+/* Responsive design for smaller screens */
+
 
 /*Main Page Styling End */
 
 /* Index Page Style Start */
 
-.mainheader {
-    background-color: #2c38dd;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    background-image: url(logo.jpg);
-    background-size: 150px;
-    background-repeat: no-repeat;
-    border: 3px solid white;
-    border-radius: 4px;
-    box-sizing: border-box;
+header {
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
     padding: 0;
+    color: #040d91;
+    font-family: knight;
+    font-size: 40px;
+    font-weight: normal;
+    background-color: white;
+    border-radius: 2px;
+}
+
+.headerlogo {
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-right: 40px;
+}
+
+.sociallogo {
+    width: 20px;
+    height: 20px;
+    float: right;
+    margin-top: -95px;
+    margin-right: 10px;
+    background-color: rgb(15, 238, 26);
+}
+
+.insta {
+    width: 20px;
+    height: 20px;
+    float: right;
+    margin-top: -95px;
+    margin-right: 50px;
+}
+
+.navbar {
+    width: 100%;
+    border-radius: 5px;
+    align-items: center;
 }
 
 .navbar li a {
     text-decoration: none;
-    color: white;
+    display: block;
+    padding: 10px;
     border-radius: 5px;
-    display: inline-block;
-    padding: 5px;
-    align-content: center;
-    margin: 5px;
+    color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: larger;
 }
 
 .navbar ul {
     list-style: none;
-    color: white;
     display: flex;
-    padding: 0;
-}
-
-.navbar {
-    color: white;
-    display: inline-block;
-    margin: auto;
-    margin-right: 20px;
+    width: 100%;
+    background-color: #6d6c6c;
+    display: flex;
+    justify-content: center;
+    border-radius: 2px;
 }
 
 .navbar li a:hover {
@@ -120,36 +187,6 @@ body {
     text-align: center;
 }
 
-.headingtext a {
-    text-decoration: none;
-    color: white;
-    font-family: knight;
-    font-weight: lighter;
-    font-size: 70px;
-}
-
-.socials {
-    display: flex;
-    box-sizing: border-box;
-    margin-left: 4px;
-}
-
-.socials p {
-    border-radius: 5px;
-    padding: 5px;
-    color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.socials img {
-    width: 25px;
-    height: 25px;
-    margin-top: 17px;
-    margin-left: 10px;
-    border: 1px solid white;
-    border-radius: 3px;
-}
-
 .zoomsocial {
     transition: transform 0.5s;
 }
@@ -160,7 +197,7 @@ body {
 
 .bg {
     width: 100%;
-    height: 150px;
+    height: 200px;
     background-image: url(bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -171,24 +208,26 @@ body {
 }
 
 .mainarea1 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    height: 580px;
-    width: 100%;
-    border: 3px solid white;
-    border-radius: 8px;
-    min-width: 100px;
-    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: auto;
 }
 
 .box1 {
-    flex: 35%;
-    padding: 15px;
+    padding: 10px;
     background-color: rgb(27, 5, 153);
     color: rgba(255, 255, 255, 0);
-    border-radius: 5px;
-    width: 100%;
+}
+
+.box1 ul {
+    padding-left: 40px;
+}
+
+.box2 {
+    background-color: white;
+    background-image: url(card.png);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 @keyframes movetext {
@@ -208,15 +247,6 @@ body {
     animation-fill-mode: forwards;
 }
 
-.box2 {
-    flex: 55%;
-    background-image: url(card.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-color: white;
-    overflow: hidden;
-}
-
 .footer {
     margin-top: 20px;
     text-align: center;
@@ -228,6 +258,7 @@ body {
     height: 50px;
     display: grid;
     place-items: center;
+    background-color: #7a7a7a;
 }
 
 .footer p {
@@ -237,6 +268,10 @@ body {
 /* Index Page Style Stop */
 
 /* Contact Us Page Style Start */
+
+.hiddenonsmall {
+    opacity: 0;
+}
 
 .contactmain {
     display: flex;
@@ -252,7 +287,6 @@ body {
 }
 
 .contactbox1 {
-    width: 30%;
     padding: 20px;
     color: white;
     flex: 2;
@@ -272,7 +306,6 @@ body {
 }
 
 .contactbox2 {
-    width: 50%;
     background-image: url(openinghours.png);
     background-repeat: no-repeat;
     background-size: 500px;
@@ -372,47 +405,48 @@ body {
     height: 50px;
     margin: 0;
     color: #040d91;
-
 }
 
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    box-sizing: border-box;
-    gap: 50px;
-    border: 3px solid white;
-    border-radius: 5px;
+.projectsgallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
     background-color: #040d91;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    justify-content: space-evenly;
+    width: 100%;
+    padding: 20px;
 }
 
-.gallery h1 {
+.projectsgallery h1 {
+    font-size: large;
     text-align: center;
 }
 
-.imagescontainer {
-    display: flex;
-    padding: 0 4px;
-    border: 3px solid #040d91;
-    border-radius: 8px;
-    background-color: #040d91;
+.projectsgallery a {
+    color: white;
+    text-decoration: none;
 }
 
-.images {
-    flex: 25%;
-    max-width: 35%;
-    padding: 0 10px;
+.projectsgallery img {
+    width: 100%;
+    object-fit: cover;
+    border: 3px solid white;
+    border-radius: 5px;
+}
+
+.imagescontainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+    background-color: #040d91;
 }
 
 .images img {
     width: 100%;
-    margin: 5px;
+    object-fit: cover;
     border: 3px solid white;
     border-radius: 5px;
 }
+
 
 @keyframes gallery {
     
@@ -468,78 +502,6 @@ body {
     animation-fill-mode: forwards;
 }
 
-.gallerycontent {
-    flex: 25%;
-    padding: 0 4px;
-    max-width: 20%;
-}
-
-.gallerycontent img {
-    width: 100%;
-    border: 2px solid white;
-    border-radius: 5px;
-}
-
-.gallerycontent h1 a {
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-}
-
-.carports {
-    flex: 25%;
-    padding: 0 4px;
-    max-width: 20%;
-}
-
-.carports img {
-    width: 100%;
-    border: 2px solid white;
-    border-radius: 5px;
-}
-
-.carports h1 a {
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-}
-
-.slidedoor {
-    flex: 25%;
-    padding: 0 4px;
-    max-width: 20%;
-}
-
-.slidedoor img {
-    width: 100%;
-    border: 2px solid white;
-    border-radius: 5px;
-}
-
-.slidedoor h1 a {
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-}
-
-.fence {
-    flex: 25%;
-    padding: 0 4px;
-    max-width: 20%;
-}
-
-.fence img {
-    width: 100%;
-    border: 2px solid white;
-    border-radius: 5px;
-}
-
-.fence h1 a {
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-}
-
 .zoom {
     transition: transform 0.5s;
 }
@@ -547,23 +509,46 @@ body {
     transform: scale(1.03);
 }
 
-
 /* Projects Page Style End */
 
 
 /* Team Page Style Start */
 
 .teamcontainer {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     width: 100%;
-    height: 100%;
-    justify-content: space-around;
-    gap: 30px;
-    background-color: #040d91;
-    border: 3px solid white;
-    border-radius: 5px;
     box-sizing: border-box;
+    background-color: #040d91;
 }
+
+.gary {
+    background-image: url(gary.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 700px;
+}
+
+.teamtext {
+    padding: 0;
+    padding-top: 30px;
+    margin: 10px;
+    color: white;
+    margin-right: 300px;
+}
+
+.teamtext h3 {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.teamtext p {
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 20px;
+}
+
 
 @keyframes text {
     from {color: #ffffff00;}
@@ -573,105 +558,6 @@ body {
 @keyframes person {
     from {opacity: 0;}
     to {opacity: 100;}
-}
-
-.gary {
-    flex: 1;
-    text-align: left;
-    background-image: url(gary.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 700px;
-    animation-name: person;
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
-}
-
-.garytext {
-    animation-name: person;
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
-    border: 3px solid white;
-    border-radius: 5px;
-    padding: 10px;
-    margin-top: 30px;
-}
-
-.team {
-    flex: 2;
-    display: flex;
-    width: 100%;
-    gap: 10px;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.person1 {
-    background-image: url(team/person1.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    flex: 14.2%;
-    padding: 5px;
-    animation-name: person;
-    animation-duration: 3s;
-    animation-delay: 2s;
-    animation-fill-mode: forwards;
-    opacity: 0;
-}
-
-.person2 {
-    background-image: url(team/person2.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    flex: 20%;
-    padding-bottom: 10px;
-    animation-name: person;
-    animation-duration: 3s;
-    animation-delay: 4s;
-    animation-fill-mode: forwards;
-    opacity: 0;
-}
-
-.person3 {
-    background-image: url(team/person3.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    flex: 20%;
-    padding: 5px;
-    animation-name: person;
-    animation-duration: 3s;
-    animation-delay: 6s;
-    animation-fill-mode: forwards;
-    opacity: 0;
-}
-
-.text .persontext1 {
-    animation-name: text;
-    animation-duration: 3s;
-    animation-delay: 2s;
-    animation-fill-mode: forwards;
-    color: rgba(255, 255, 255, 0);
-}
-
-.text .persontext2 {
-    animation-name: text;
-    animation-duration: 3s;
-    animation-delay: 4s;
-    animation-fill-mode: forwards;
-    color: rgba(255, 255, 255, 0);
-}
-
-.text .persontext3 {
-    animation-name: text;
-    animation-duration: 3s;
-    animation-delay: 6s;
-    animation-fill-mode: forwards;
-    color: rgba(255, 255, 255, 0);
-}
-
-.text {
-    padding: 10px;
-    color: rgb(255, 255, 255);
 }
 
 /* Team Page Style End */
