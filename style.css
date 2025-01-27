@@ -44,7 +44,9 @@ body {
     }
 
     header h1 {
-        font-size: smaller;
+        font-size: 25px !important;
+        font-weight: 10;
+        line-height: 110px;
     }
 
     .hidesmall {
@@ -138,6 +140,16 @@ header {
     margin-right: 40px;
 }
 
+header h1 {
+    font-size: 50px;
+    font-weight: 10;
+    color: rgb(40, 43, 199);
+}
+
+.header h1:hover {
+    transform: rotate(90deg);
+}
+
 .sociallogo {
     width: 20px;
     height: 20px;
@@ -145,6 +157,7 @@ header {
     margin-top: -95px;
     margin-right: 10px;
     background-color: rgb(15, 238, 26);
+    border-radius: 5px;
 }
 
 .insta {
@@ -153,6 +166,7 @@ header {
     float: right;
     margin-top: -95px;
     margin-right: 50px;
+    border-radius: 5px;
 }
 
 .navbar {
@@ -178,6 +192,7 @@ header {
     display: flex;
     justify-content: center;
     border-radius: 2px;
+    background-image: linear-gradient(#1b0599, #00000091);
 }
 
 .navbar li a:hover {
@@ -202,7 +217,7 @@ header {
     transition: transform 0.5s;
 }
 .zoomsocial:hover {
-    transform: scale(1.5);
+    transform: scale(1.3);
 }
 
 
@@ -226,8 +241,9 @@ header {
 
 .box1 {
     padding: 10px;
-    background-color: rgb(27, 5, 153);
+    background-color: #1b0599;
     color: rgba(255, 255, 255, 0);
+    background-image: linear-gradient(#1b0599, rgba(0, 0, 0, 0.479) );
 }
 
 .box1 ul {
@@ -290,7 +306,7 @@ header {
     width: 100%;
     border: 3px solid white;
     border-radius: 5px;
-    background-color: #040d91;
+    background-image: linear-gradient(#1b0599, rgba(0, 0, 0, 0.795) );
 }
 
 .contactinfo li {
@@ -365,7 +381,7 @@ header {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
-    background-color: #040d91;
+    background-image: linear-gradient(#1b0599, rgba(0, 0, 0, 0.795) );
     width: 100%;
     padding: 20px;
 }
@@ -373,6 +389,7 @@ header {
 .projectsgallery h1 {
     font-size: large;
     text-align: center;
+    padding-bottom: 10px;
 }
 
 .projectsgallery a {
@@ -461,6 +478,7 @@ header {
 }
 .zoom:hover {
     transform: scale(1.03);
+    box-shadow: 0 0 15px white;
 }
 
 /* Projects Page Style End */
@@ -472,7 +490,7 @@ header {
     display: grid;
     grid-template-columns: 30% 70%;
     box-sizing: border-box;
-    background-color: #040d91;
+    background-image: linear-gradient(#1b0599, rgba(0, 0, 0, 0.795) );
 }
 
 .gary {
