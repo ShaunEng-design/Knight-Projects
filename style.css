@@ -25,7 +25,7 @@ body {
 
 /* Responsive design for smaller screens */
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
 
     .navbar .hidemenusmall {
         display: none;
@@ -102,6 +102,11 @@ body {
     .pic img {
         width: 400px !important;
         height: 300px !important;
+    }
+
+    .contactinfo li {
+        margin-left: 100px !important;
+        color: white;
     }
 }
 
@@ -316,6 +321,16 @@ header {
 
 .red {
     color: red;
+}
+
+.contactdeets {
+    color: white;
+    text-align: center;
+}
+
+.contactdeets2 {
+    color: white;
+    text-align: center;
 }
 
 
