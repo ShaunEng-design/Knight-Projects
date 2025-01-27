@@ -25,7 +25,7 @@ body {
 
 /* Responsive design for smaller screens */
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 500px) {
 
     .navbar .hidemenusmall {
         display: none;
@@ -97,6 +97,11 @@ body {
         background-position-x: center;
         height: 200px;
         margin-top: 10px;
+    }
+
+    .pic img {
+        width: 400px !important;
+        height: 300px !important;
     }
 }
 
@@ -273,124 +278,46 @@ header {
     opacity: 0;
 }
 
-.contactmain {
-    display: flex;
-    justify-content: center;
+.contactinfo {
     height: 700px;
     gap: 40px;
     width: 100%;
-    align-items: right;
     border: 3px solid white;
     border-radius: 5px;
     background-color: #040d91;
-    box-sizing: border-box;
 }
 
-.contactbox1 {
-    padding: 20px;
-    color: white;
-    flex: 2;
-    color: black;
-    list-style: none;
-}
-
-.contactbox1 li {
-    border-left: 2px solid white;
-    padding-left: 10px;
-    color: white;
-}
-
-.contactbox1 p {
-    text-align: left;
-    
-}
-
-.contactbox2 {
-    background-image: url(openinghours.png);
-    background-repeat: no-repeat;
-    background-size: 500px;
-    background-position-x: center;
-    background-position-y: 50px;
-    justify-content: flex-end;
-    color: white;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    margin-right: 300px;
-}
-
-.contactbox2 li {
-    list-style: none;
+.contactinfo li {
     text-align: center;
-    margin-right: 20px;
+    color: white;
 }
 
-.contactbox2 ul {
+.pic {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.pic img {
+    width: 800px;
+    height: 400px;
+}
+
+.contactheading {
     color: white;
-    font-size: 25px;
-    margin-bottom: 200px;
-    border: 3px solid white;
-    border-radius: 10px;
-    padding: 10px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.contactheading .underline {
+    text-align: center;
 }
 
 .red {
     color: red;
 }
 
-.contactheading {
-    color: white;
-    margin-top: 10px;
-}
 
-.contactbox1 p {
-    font-size: 15px;
-    color: white;
-    margin-top: 40px;
-}
-
-.underline {
-    text-decoration: underline;
-}
-
-.form-container {
-    background-color: white;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 500px;
-    box-sizing: border-box;
-    margin-top: 20px;
-}
-
-.form-container input, .form-container textarea {
-    width: 90%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 14px;
-}
-
-.form-container textarea {
-    height: 100px;
-    resize: none;
-}
-
-.form-container button {
-    width: 100%;
-    padding: 10px;
-    background-color: #020e81;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-.form-container button:hover {
-    background-color: #020e81;
-}
 
 /* Contact Us Page Style End */
 
