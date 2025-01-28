@@ -192,7 +192,8 @@ header h1 {
     display: flex;
     justify-content: center;
     border-radius: 2px;
-    background-image: linear-gradient(#1b0599, #00000091);
+    background-color: rgba(0, 0, 0, 0.486);
+    border-radius: 5px;
 }
 
 .navbar li a:hover {
