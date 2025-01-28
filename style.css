@@ -289,6 +289,7 @@ header h1 {
     background-image: url(card.png);
     background-size: contain;
     background-repeat: no-repeat;
+    border-radius: 5px;
 }
 
 @keyframes movetext {
