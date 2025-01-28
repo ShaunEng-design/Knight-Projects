@@ -15,8 +15,8 @@ html {
 }
 
 @font-face {
-    font-family: knight;
-    src: url(fonts/Deadknight.ttf)
+    font-family: wolf;
+    src: url(fonts/WolfsBaneRegular-RZqE.ttf)
 }
 
 body {
@@ -145,7 +145,7 @@ header {
     line-height: 100px;
     padding: 0;
     color: #040d91;
-    font-family: knight;
+    font-family: wolf;
     font-size: 40px;
     font-weight: normal;
     background-color: white;
