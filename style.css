@@ -421,6 +421,10 @@ header h1 {
     border-radius: 5px;
 }
 
+.galleryheading {
+    margin-top: 10px;
+}
+
 
 @keyframes gallery {
     
