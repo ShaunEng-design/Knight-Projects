@@ -171,6 +171,8 @@ header h1 {
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 10px;
+    -webkit-text-stroke-color: #6d6c6c;
+    -webkit-text-stroke-width: 2px;
 }
 
 .headerspan2 {
