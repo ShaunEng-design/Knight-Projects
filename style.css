@@ -660,7 +660,6 @@ header h1 {
     }
 
     .bg {
-        background-position-x: 120%;
         background-attachment: unset;
         width: 100%;
     }
