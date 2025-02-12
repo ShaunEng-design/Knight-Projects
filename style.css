@@ -724,8 +724,7 @@ header h1 {
     .maincontainer3 {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
-        height: 200px;
+        height: 1500px;
         margin-top: 600px;
     }
 
@@ -743,7 +742,7 @@ header h1 {
     .contactbtn {
         padding: 20px;
         margin-top: 40px;
-        margin-left: 130px;
+        margin-left: 150px;
         border-radius: 5px;
         font-size: 1rem;
         font-weight: bolder;
@@ -756,6 +755,15 @@ header h1 {
         background-color: white;
         transition: 0.3s;
         cursor: pointer;
+    }
+
+    .mainimg2 {
+        margin-top: -350px;
+        width: 95%;
+        height: 500px;
+        background-image: url(images/index/service.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     .hidesmall {
