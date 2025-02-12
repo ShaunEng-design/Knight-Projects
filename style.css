@@ -662,6 +662,7 @@ header h1 {
     .bg {
         background-position-x: 120%;
         background-attachment: unset;
+        width: 100%;
     }
 
     .maincontainer1 {
@@ -712,10 +713,11 @@ header h1 {
 
     .mainbox {
         width: 90%;
-        height: 230px;
+        height: 250px;
         margin-left: 10px;
         border-left: none;
         margin-top: 40px;
+        border-left: 2px solid black;
     }
 
     .testemonial {
