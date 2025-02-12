@@ -209,16 +209,17 @@ header h1 {
 }
 
 .sectionhead {
-    margin: 30px;
     padding: 15px;
     width: 100%;
     font-size: 2rem;
+    margin-top: 50px;
+    margin-bottom: -50px;
 }
 
 .maincontainer2 {
     display: flex;
     justify-content: space-around;
-    height: 200px;
+    height: auto;
     margin-top: 50px;
 }
 
@@ -247,18 +248,18 @@ header h1 {
     width: 30%;
     height: 230px;
     border-left: 2px solid black;
+    height: auto;
 }
 
 .testemonial {
     margin: auto;
     background-color: #020969;
     width: 95%;
-    height: 300px;
+    height: auto;
     color: white;
     padding: 20px;
     margin-top: 90px;
     border-radius: 5px;
-    position: relative;
     font-family: 'Times New Roman', Times, serif
 }
 
@@ -266,26 +267,17 @@ header h1 {
     width: 150px;
     height: 150px;
     border-radius: 100px;
-    margin-left: 100px;
     }
 
-.testemonial .adjustp {
-    width: 900px;
-    height: 100px;
-    position: absolute;
-    top: 40px;
-    left: 450px;
-    font-size: 2rem;
+.testemonial p {
+    width: auto;
+    margin-left: 200px;
+    font-size: 1.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+    top: 100px;
 }
 
-.testemonial p {
-    width: 300px;
-    height: 100px;
-    position: absolute;
-    top: 200px;
-    left: 450px;
-    font-size: 1.5rem;
-}
 
 .invertedcomma {
     color: red;
@@ -720,14 +712,37 @@ header h1 {
     }
 
     .testemonial {
-       display: none;
+        margin: auto;
+        background-color: #020969;
+        width: 95%;
+        height: auto;
+        color: white;
+        padding: 20px;
+        margin-top: 700px;
+        border-radius: 5px;
+        font-family: 'Times New Roman', Times, serif
+    }
+    
+    .testemonial img {
+        width: 150px;
+        height: 150px;
+        border-radius: 100px;
+        }
+    
+    .testemonial p {
+        width: auto;
+        margin-left: 20px;
+        font-size: 1.5rem;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        position: relative;
+        top: 0;
     }
 
     .maincontainer3 {
         display: flex;
         flex-direction: column;
         height: 1500px;
-        margin-top: 650px;
+        margin-top: 100px;
     }
 
     .servicelist {
@@ -744,7 +759,7 @@ header h1 {
     .contactbtn {
         padding: 20px;
         margin-top: 40px;
-        margin-left: 120px;
+        margin-left: 150px;
         border-radius: 5px;
         font-size: 1rem;
         font-weight: bolder;
