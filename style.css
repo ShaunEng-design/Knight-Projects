@@ -165,6 +165,13 @@ header h1 {
     display: flex;
 }
 
+.businesslogo {
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    box-shadow: 9px 9px 10px rgba(0, 0, 0, 0.445);
+}
+
 .mainintro {
     margin: auto;
     width: 30%;
@@ -409,6 +416,7 @@ footer {
     background-color: #cecece;
     margin-top: 50px;
     position: relative;
+    width: 100%;
 }
 
 footer h3 {
@@ -448,6 +456,7 @@ footer h3 {
 
 .contactmainintro img {
     width: 150px;
+    margin-top: 10px;
 }
 
 .contactmainintro ul {
@@ -635,7 +644,11 @@ footer h3 {
         display: flex;
         flex-direction: column;
     }
-    
+
+    .businesslogo {
+        display: none;
+    }
+
     .mainintro {
         margin: auto;
         width: 80%;
@@ -758,6 +771,10 @@ footer h3 {
         background-color: white;
         transition: 0.3s;
         cursor: pointer;
+    }
+
+    footer {
+        height: 100px;
     }
 
     .mainimg2 {
