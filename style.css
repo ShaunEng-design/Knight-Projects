@@ -31,7 +31,44 @@ html {
     src: url(fonts/WolfsBaneRegular-RZqE.ttf)
 }
 
+/* Footer Styles */
 
+footer {
+    background-color: #000000a1;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    margin-top: 40px;
+}
+
+.footer-content {
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.footer-content p {
+    margin: 5px 0;
+}
+
+.footer-content p:first-child {
+    font-weight: bold;
+}
+
+footer p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+footer p a {
+    color: #e67e22;
+    text-decoration: none;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
 
 /*Main Page Styling End */
 
@@ -88,16 +125,6 @@ header h1 {
     border-radius: 5px;
 }
 
-.insta {
-    width: 20px;
-    height: 20px;
-    float: right;
-    margin-top: -95px;
-    margin-right: 50px;
-    border-radius: 5px;
-    display: none;
-}
-
 .navbar {
     width: 100%;
     align-items: center;
@@ -133,20 +160,12 @@ header h1 {
     transform: scale(1.1);
 }
 
-.headingtext {
-    margin-left: 170px;
-    font-weight: lighter;
-    font-size: x-large;
-    text-align: center;
-}
-
 .zoomsocial {
     transition: transform 0.5s;
 }
 .zoomsocial:hover {
     transform: scale(1.3);
 }
-
 
 .bg {
     width: 100%;
@@ -199,7 +218,7 @@ header h1 {
     position: relative;
 }
 
-.displayonhover {
+.textoverheroimage {
     color: #616161;
     font-size: 2rem;
     font-weight: bolder;
@@ -321,16 +340,8 @@ header h1 {
     top: 100px;
 }
 
-
 .invertedcomma {
     color: red;
-}
-
-.sectionhead2 {
-    margin: 30px;
-    padding: 15px;
-    width: 100%;
-    font-size: 3rem;
 }
 
 .maincontainer3 {
@@ -411,23 +422,7 @@ header h1 {
     cursor: pointer;
 }
 
-footer {
-    height: 70px;
-    background-color: #cecece;
-    margin-top: 50px;
-    position: relative;
-    width: 100%;
-}
-
-footer h3 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    translate: -50% -50%;
-    color: #616161;
-}
-
-/* Index Page Style Stop */
+/* Index Page Style END */
 
 /* Contact Us Page Style Start */
 
@@ -611,19 +606,11 @@ footer h3 {
     top: 100px;
 }
 
-  
-
 /* Projects Page Style End */
 
 /* Responsive design for smaller screens */
 
 @media screen and (max-width: 500px) {
-
-    .smallgrid {
-        display: grid !important;
-        grid-template-columns: 1fr !important;
-        grid-auto-rows: minmax(100px, auto);
-    }
 
     .box2 {
         display: none;
@@ -670,13 +657,6 @@ footer h3 {
         background-repeat: no-repeat;
         background-size: cover;
         margin-top: 20px;
-    }
-
-    .displayonhover {
-        font-size: 1rem;
-        width: 100%;
-        height: auto;
-        padding: 10px;
     }
 
     .mainbtn {
@@ -774,7 +754,11 @@ footer h3 {
     }
 
     footer {
-        height: 100px;
+        padding: 15px;
+    }
+
+    .footer-content {
+        font-size: 14px;
     }
 
     .mainimg2 {
@@ -833,22 +817,6 @@ footer h3 {
         background-image: url(images/contactus/contactus.jpg);
     }
 
-    .hidesmall {
-        display: none;
-    }
-
-    .contactsmallgrid {
-        display: grid !important;
-        grid-template-columns: 1fr !important;
-        grid-auto-rows: minmax(100px, auto) !important;
-    }
-
-    .contactbox2 {
-        background-image: none !important;
-        padding: 0 !important;
-        margin: 0 !important;
-    }
-
     .contactbox2 .hiddenonsmall {
         text-align: center;
         opacity: 1;
@@ -858,60 +826,14 @@ footer h3 {
         font-weight: bold;
     }
 
-    .contactheading {
-        margin-bottom: 20px;
-    }
-
-    .smallgridteam {
-        display: grid !important;
-        grid-template-columns: repeat(1, 1fr) !important;
-    }
-
-    .smallgridteam .teamtext p {
-        margin: 0;
-    }
-
-    .smallgridteam .teamtext {
-        margin: 10px;
-        text-align: center;
-        width: 96%;
-    }
-
-    .smallgridteam .gary {
-        background-image: url(gary.jpg);
-        background-size: 150px;
-        background-repeat: no-repeat;
-        background-position-x: center;
-        height: 200px;
-        margin-top: 10px;
-    }
-
-    .pic img {
-        width: 350px !important;
-        height: 300px !important;
-    }
-
-    .contactinfo li {
-        margin-left: 100px !important;
-        color: white;
-    }
-
     .sociallogo {
-        margin-right: 10px !important;
-        width: 20px !important;
-        height: 20px !important;
+        margin-right: 10px;
+        width: 20px;
+        height: 20px;
     }
 
     .headerlogo {
-        margin-right: 0 !important;
-    }
-
-    .wa {
-        transition: transform 0.5s !important;
-    }
-    
-    .wa:hover {
-        transform: scale(1.1) !important;
+        margin-right: 0;
     }
 
 }
