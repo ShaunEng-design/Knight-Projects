@@ -607,6 +607,43 @@ header h1 {
     top: 100px;
 }
 
+.projectcontainer2 {
+    margin: auto;
+    width: 80%;
+}
+
+.projectcontainer2 h2 {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 80px;
+    padding: 10px;
+}
+
+.projectcontainerp {
+    margin: auto;
+    text-align: center;
+    width: 30%;
+    padding: 20px;
+}
+
+.projectcontactbtn {
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bolder;
+    background-color: #020969;
+    color: white;
+    margin-top: 30px;
+    width: 50%;
+}
+
+.projectcontactbtn:hover {
+    color: #000000a1;
+    background-color: white;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
 /* Projects Page Style End */
 
 /* Responsive design for smaller screens */
@@ -803,6 +840,14 @@ header h1 {
         font-family: Georgia, 'Times New Roman', Times, serif;
         position: relative;
         top: 0;
+    }
+
+    .projectcontainerp {
+        width: 80%;
+    }
+
+    .projectcontactbtn {
+        width: 80%;
     }
 
     .contactmainintro {
