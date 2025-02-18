@@ -31,6 +31,11 @@ html {
     src: url(fonts/WolfsBaneRegular-RZqE.ttf)
 }
 
+@font-face {
+    font-family: charm;
+    src: url(fonts/Charm-Regular.ttf);
+}
+
 /* Footer Styles */
 
 footer {
@@ -186,7 +191,6 @@ header h1 {
 
 .businesslogo {
     width: 100%;
-    height: auto;
     margin-top: 50px;
     box-shadow: 9px 9px 10px rgba(0, 0, 0, 0.445);
     border-radius: 30px;
@@ -206,6 +210,7 @@ header h1 {
 .mainintro p {
     font-size: 1rem;
     margin-top: 10px;
+    line-height: 1.5;
 }
 
 .mainimg {
@@ -225,7 +230,6 @@ header h1 {
     font-weight: bolder;
     background-color: rgba(255, 255, 255, 0.89);
     width: 100%;
-    height: auto;
     padding: 20px;
     text-align: center;
     position: absolute;
@@ -256,8 +260,8 @@ header h1 {
     padding: 15px;
     width: 100%;
     font-size: 2rem;
-    margin-top: 50px;
-    margin-bottom: -50px;
+    margin-top: 150px;
+    margin-bottom: -80px;
 }
 
 .maincontainer2 {
@@ -293,6 +297,7 @@ header h1 {
     height: 230px;
     border-left: 2px solid black;
     height: auto;
+    line-height: 1.5;
 }
 
 @keyframes appear {
@@ -317,7 +322,6 @@ header h1 {
     padding: 20px;
     margin-top: 90px;
     border-radius: 5px;
-    font-family: 'Times New Roman', Times, serif;
     animation-name: appear;
     animation-timing-function: linear;
     animation-timeline: view();
@@ -335,14 +339,10 @@ header h1 {
 .testemonial p {
     width: auto;
     margin-left: 200px;
-    font-size: 1.5rem;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    font-family: charm;
     position: relative;
     top: 100px;
-}
-
-.invertedcomma {
-    color: red;
 }
 
 .maincontainer3 {
@@ -363,6 +363,10 @@ header h1 {
     font-size: 50px;
 }
 
+.servicelist p {
+    line-height: 1.5;
+}
+
 .servicelist ul {
     margin-top: 30px;
     border-left: 2px solid black;
@@ -371,6 +375,7 @@ header h1 {
 
 .servicelist li {
     margin-left: 30px;
+    line-height: 1.5;
 }
 
 .mainimg2 {
@@ -448,6 +453,7 @@ header h1 {
 .contactmainintro p {
     font-size: 1rem;
     margin-top: 10px;
+    line-height: 1.5;
 }
 
 .contactmainintro img {
@@ -471,6 +477,31 @@ header h1 {
     position: relative;
 }
 
+.operatinghours h2 {
+    font-size: 3rem;
+    margin-top: 64px;
+    margin-bottom: 30px;
+}
+
+.hours-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.hours-table th,
+.hours-table td {
+    padding: 8px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+.hours-table th {
+    background-color: #020969;
+    color: #fff;
+}
+.hours-table tr:last-child td {
+    border-bottom: none;
+}
+
 /* Contact Us Page Style End */
 
 /* Projects Page Style Start */
@@ -490,8 +521,8 @@ header h1 {
     padding: 15px;
     width: 100%;
     font-size: 2rem;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 100px;
+    margin-bottom: 10px;
 }
 
 .projects-container {
@@ -536,6 +567,7 @@ header h1 {
   }
 
       /* Call to Action */
+
 .cta {
     text-align: center;
     padding: 30px;
@@ -558,6 +590,7 @@ header h1 {
   }
 
   /* Gallery Section */
+  
 .gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3-column layout */
@@ -601,8 +634,8 @@ header h1 {
 .projecttestemonial p {
     width: auto;
     margin-left: 200px;
-    font-size: 1.5rem;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.9rem;
+    font-family: charm;
     position: relative;
     top: 100px;
 }
@@ -624,6 +657,7 @@ header h1 {
     text-align: center;
     width: 30%;
     padding: 20px;
+    line-height: 1.5;
 }
 
 .projectcontactbtn {
