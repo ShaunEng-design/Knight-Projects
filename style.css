@@ -154,10 +154,6 @@ header h1 {
     background-color: #000000a1;
 }
 
-.navbar li a:hover {
-    text-decoration: underline;
-}
-
 .zoomnav {
     transition: transform 0.3s;
 }
