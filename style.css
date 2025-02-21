@@ -154,9 +154,6 @@ header h1 {
     background-color: #000000a1;
 }
 
-.zoomnav {
-    transition: transform 0.3s;
-}
 .zoomnav:hover {
     transform: scale(1.1);
 }
